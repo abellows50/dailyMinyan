@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  font-family: Copperhead;
+}
+
+
+
+.welcometext .logotext {
+  color: black;
+  /*text-align: center;*/
+}
+
+.welcometext {
+  font-size: 30px;
+}
+
+
+.welcomediv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vh;
+  height: 50vh;
+  margin: 0 auto;
+  border: black solid 2px;
+  animation: fadeout 2s forwards;
+}
+
+.webdiv {
+  position: absolute;
+  padding: 10px;
+  opacity: 0;
+  height: 95vh;
+  width: 95vw;
+  margin: 0 auto;
+  animation: fadein 2s 3s forwards;
+}
+
+.titlediv {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  /*border: black solid 2px;*/
+}
+
+.bodydiv {
+  margin: auto;
+  padding: 5px;
+  width: fit-content;
+  /*height:fit-content;*/
+  font-size: 15px;
+  border: black solid 2px;
+  color: #000f00;
+  font-family: "Courier New";
+}
+
+.signup {
+  width: 93vw;
+  height: 800px;
+  margin: auto;
+  position: relative;
+  left: -50px;
+  /*170*/
+  top: -170px;
+}
+
+.spreadsheet {
+  width: 92vw;
+  height: 530px;
+  overflow: hidden;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
